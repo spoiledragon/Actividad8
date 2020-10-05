@@ -12,7 +12,7 @@ c1.setSistema("Windows8");
 c1.setProcesador("Intel Core i3");
 c1.setRam(4);
 
-c2.setNombre("Juanito2");
+c2.setNombre("Juanito MASTER RACE");
 c2.setSistema("Windows10");
 c2.setProcesador("Intel Core i9");
 c2.setRam(64);
