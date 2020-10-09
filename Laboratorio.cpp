@@ -18,10 +18,13 @@
         for(int i = 0; i<cont;i++ )
         {
             Computador &compu = maquinas[i];
+            cout<<"Maquina numero:"<<i+1<<endl;
             cout<<"Nombre:"<<compu.getNombre()<<endl;
             cout<<"S.O:"<<compu.getSistema()<<endl;
             cout<<"Procesador:"<<compu.getProcesador()<<endl;
             cout<<"Ram:"<<compu.getRam()<<endl;
+            cout<<endl<<endl;
+            
 
 
         }
