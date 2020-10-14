@@ -1,9 +1,9 @@
 #ifndef COMPUTADORA_H_INCLUDED
 #define COMPUTADORA_H_INCLUDED
-
+#include <iomanip>
 #include <iostream>
 #include <string>
-
+using namespace std;
 class Computador{
 
 private:
@@ -27,7 +27,21 @@ public:
     std::string getSistema()    const;
     int getRam()                const;
 
+    friend std::ostream& operator <<(std::ostream &out, const Computador &co){
+        out<<left;
+        out << setw(20)<<co.nombre<<"||";
+        out << setw(20)<<co.procesador<<"||";
+        out << setw(5)<<co.ram<<"||";
+        out << setw(20)<<co.sistema<<"||"; 
+        return out;
+    }
+
+    friend std::istream& operator >>(std::istream &in, Computador &co){
+        string temp;
+        
+    }
+    
+
 };
 
-
-#endif // COMPUTADORA_H_INCLUDED
+#endif 

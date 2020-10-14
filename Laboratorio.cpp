@@ -15,17 +15,15 @@
 
     void Laboratorio::getcompu()
     {
+        cout<<left;
+        cout<<setw(20)<<"Nombre"<<"||";
+        cout<<setw(20)<<"Procesador"<<"||";
+        cout<<setw(5)<<"ram"<<"||";
+        cout<<setw(20)<<"Sistema"<<"||"<<endl;
         for(int i = 0; i<cont;i++ )
         {
             Computador &compu = maquinas[i];
-            cout<<"Maquina numero:"<<i+1<<endl;
-            cout<<"Nombre:"<<compu.getNombre()<<endl;
-            cout<<"S.O:"<<compu.getSistema()<<endl;
-            cout<<"Procesador:"<<compu.getProcesador()<<endl;
-            cout<<"Ram:"<<compu.getRam()<<endl;
-            cout<<endl<<endl;
-            
-
-
+            cout<<compu<<endl;
+    
         }
     }

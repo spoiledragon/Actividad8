@@ -26,6 +26,8 @@ Lab1.agregarpc(c2);
 Lab1.agregarpc(c3);
 Lab1.agregarpc(c4);
 
-Lab1.getcompu();
+
+   Lab1.getcompu();
+   
    return 0;
 }
