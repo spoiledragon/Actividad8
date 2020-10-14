@@ -12,6 +12,13 @@ public:
     Laboratorio();
     void getcompu();
     void agregarpc(const Computador& compu);
+
+    friend Laboratorio& operator<<(Laboratorio &lab, const Computador &c)
+    {
+        lab.agregarpc(c);
+        
+        return lab;
+    }
 };
 
 #endif // LABORATORIO_H_INCLUDED

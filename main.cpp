@@ -18,16 +18,17 @@ c2.setSistema("Windows10");
 c2.setProcesador("Intel Core i9");
 c2.setRam(64);
 
-Computador c3 = Computador("Intel Lentium","windows me","Juanito tostador",1);
-Computador c4 = Computador("threadripper 2990X","windows 12","Juanito nasa PC",256);
-
-Lab1.agregarpc(c1);
-Lab1.agregarpc(c2);
-Lab1.agregarpc(c3);
-Lab1.agregarpc(c4);
-
-
-   Lab1.getcompu();
+//Computador c3 = Computador("Intel Lentium","windows me","Juanito tostador",1);
+//Computador c4 = Computador("threadripper 2990X","windows 12","Juanito nasa PC",256);
    
+   cout<<"se añadieron los 3 computadores "<<endl;
+   Lab1<<c1<<c2;
+
+   //computador 3 
+   cin>>c3;
+   cout<<"se añadio"<<endl;
+   Lab1<<c3;
+   
+   Lab1.getcompu();
    return 0;
 }

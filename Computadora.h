@@ -38,6 +38,18 @@ public:
 
     friend std::istream& operator >>(std::istream &in, Computador &co){
         string temp;
+        cout<<"Nombre: "<<endl;
+        getline(cin,co.nombre);
+
+        cout<<"Procesador: "<<endl;
+        getline(cin,co.procesador);
+
+        cout<<"Cantidad de Ram:"<<endl;
+        cin>>co.ram;
+
+        cout<<"Sistema Operativo: "<<endl;
+        fflush(stdin);
+        getline(cin,co.sistema);
         
     }
     
