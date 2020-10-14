@@ -14,6 +14,8 @@ public:
     void agregarpc(const Computador& compu);
     void respaldartabla();
     void respaldar();
+    void recupera();
+
 
     friend Laboratorio& operator<<(Laboratorio &lab, const Computador &c)
     {
