@@ -1,5 +1,6 @@
     #include "Laboratorio.h"
     #include <iostream>
+    #include <fstream>
     using namespace std;
     Laboratorio::Laboratorio(){}
 
@@ -27,3 +28,41 @@
     
         }
     }
+
+    //pos la tabla
+    void Laboratorio::respaldartabla(){
+         ofstream archivo("ComputadorasTabla.txt");
+            if(archivo.is_open()){
+                archivo<<left;
+                archivo<<setw(20)<<"Nombre"<<"||";
+                archivo<<setw(20)<<"Procesador"<<"||";
+                archivo<<setw(5)<<"ram"<<"||";
+                archivo<<setw(20)<<"Sistema"<<"||"<<endl;
+                for(int i = 0; i<cont;i++ )
+                {
+                Computador &compu = maquinas[i];
+                archivo<<compu<<endl;
+                }
+            }
+
+            archivo.close();
+    }
+        //repaldar normalito
+        void Laboratorio::respaldar(){
+         ofstream archivo("Computadoras.txt");
+            if(archivo.is_open()){
+
+                for(int i = 0; i<cont;i++ )
+                {
+                Computador &compu = maquinas[i];
+                archivo<<compu.getNombre()<<endl;
+                archivo<<compu.getProcesador()<<endl;
+                archivo<<compu.getRam()<<endl;
+                archivo<<compu.getSistema()<<endl;
+                }
+            }
+
+            archivo.close();
+    }
+            
+            

@@ -12,11 +12,13 @@ public:
     Laboratorio();
     void getcompu();
     void agregarpc(const Computador& compu);
+    void respaldartabla();
+    void respaldar();
 
     friend Laboratorio& operator<<(Laboratorio &lab, const Computador &c)
     {
         lab.agregarpc(c);
-        
+
         return lab;
     }
 };

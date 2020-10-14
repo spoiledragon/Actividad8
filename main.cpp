@@ -30,5 +30,10 @@ c2.setRam(64);
    Lab1<<c3;
    
    Lab1.getcompu();
+   Lab1.respaldartabla();
+   Lab1.respaldar();//linea por linea
+   
+
+
    return 0;
 }
